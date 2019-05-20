@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressBarActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="20"
+        android:secondaryProgress="30"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="进度条情况："
+        android:textSize="20dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/addBtn"
+        android:text="增加"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2" />
+    <Button
+        android:id="@+id/reduceBtn"
+        android:text="减少"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addBtn"
+        />
+    <Button
+        android:id="@+id/resetBtn"
+        android:text="重置"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reduceBtn" />
+    <Button
+        android:id="@+id/progressDialogBtn"
+        android:text="对话框形式进度条"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetBtn" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="20"
+        android:padding="10dp"
+        android:layout_below="@+id/progressDialogBtn"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:text="进度条进度："
+        android:textSize="20dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:text="进度条状态："
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp" />
+
+
+</RelativeLayout>
